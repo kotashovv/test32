@@ -1,0 +1,114 @@
+.about {
+    padding: 70px 0 200px;
+    background-image: url(assets/imgs/aboutback.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .for-4k {
+        display: none;
+    }
+    // .about__body
+    @media(min-width:1921px) {
+        background-image: none;
+        position: relative;
+        z-index: 2;
+        .for-4k {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+
+    // .about__img
+
+    &__img {
+        width: 50%;
+        margin-right: 30px;
+        >img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .about__text
+
+    &__text {
+        width: 50%;
+        font-family: $mont;
+        h2 {
+            font-weight: 500;
+            margin: 0;
+            font-size: 48px;
+            line-height: 1.3;
+            color: $color;
+        }
+        h3 {
+            font-weight: 400;
+            font-size: 20px;
+            margin: 0;
+            color: $black;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            color: $black;
+            font-weight: 400;
+            margin: 0;
+            line-height: 1.4;
+        }
+    }
+}
+.container {
+}
+@media(max-width:1024px) {
+    .about {
+        padding: 60px 0 140px;
+        &__text {
+            h2 {
+                font-size: 36px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .about {
+        padding: 40px 0 80px;
+        &__body {
+            flex-direction: column;
+        }
+        &__img {
+            margin-right: 0;
+            width: 100%;
+            max-width: 420px;
+            margin-bottom: 30px;
+        }
+        &__text {
+            width: 100%;
+            text-align: center;
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
+}

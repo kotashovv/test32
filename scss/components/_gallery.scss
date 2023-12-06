@@ -1,0 +1,40 @@
+.gallery {
+    padding: 40px 0 0;
+    // .gallery__title
+    .container {
+        padding: 0;
+        max-width: none;
+    }
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    // .gallery__slider
+
+    &__slider {
+    }
+
+    // .gallery__list
+
+    &__list {
+    }
+
+    // .gallery__item
+
+    &__item {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.container {
+}
+.section-title {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
